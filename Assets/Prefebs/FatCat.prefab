@@ -199,7 +199,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3656605124830039823}
-  - component: {fileID: 3656605124830039822}
   - component: {fileID: -1562956335481641442}
   - component: {fileID: -3390620862363925168}
   m_Layer: 0
@@ -226,26 +225,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &3656605124830039822
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3656605124830039808}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 814c67f57dbf30647a678fc3dcbad974, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &-1562956335481641442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +240,7 @@ MonoBehaviour:
   hungryCat: {fileID: 3656605124400316256}
   fullCat: {fileID: 3656605124660540910}
   front: {fileID: 3656605125387830519}
+  type: 1
 --- !u!61 &-3390620862363925168
 BoxCollider2D:
   m_ObjectHideFlags: 0

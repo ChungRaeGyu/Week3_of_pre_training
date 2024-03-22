@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject normalCat;
     public GameObject fatCat;
-
+    public GameObject pirateCat;
     public GameObject retryBtn;
 
     public RectTransform levelFront;
@@ -37,6 +37,24 @@ public class GameManager : MonoBehaviour
     }
     void MakeCat(){
         Instantiate(normalCat);
+        if(level==1){
+            int p = Random.Range(0,10);
+            if(p<2){
+                Instantiate(normalCat);
+            }   
+        }
+        else if(level==2){
+            int p = Random.Range(0, 10);
+            if (p < 5)
+            {
+                Instantiate(normalCat);
+            }
+        }
+        else if(level==3){
+            Instantiate(fatCat);
+        }else if(level>=4){
+            Instantiate(pirateCat);
+        }
     }
     public void GameOver(){
         retryBtn.SetActive(true);

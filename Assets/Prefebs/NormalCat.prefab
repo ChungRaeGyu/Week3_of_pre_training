@@ -342,6 +342,7 @@ MonoBehaviour:
   hungryCat: {fileID: 5319181478153748784}
   fullCat: {fileID: 5319181477367389331}
   front: {fileID: 5319181479126781680}
+  type: 1
 --- !u!61 &-9022108191733343910
 BoxCollider2D:
   m_ObjectHideFlags: 0
